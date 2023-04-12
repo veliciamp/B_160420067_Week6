@@ -13,8 +13,7 @@ import com.ubaya.adv160420067week4.util.loadImage
 import kotlinx.android.synthetic.main.student_list_item.view.*
 
 class StudentListAdapter(val studenList:ArrayList<Student>)
-    :RecyclerView.Adapter<StudentListAdapter.StudentViewHolder>()
-{
+    :RecyclerView.Adapter<StudentListAdapter.StudentViewHolder>() {
     class StudentViewHolder(var view: View) : RecyclerView.ViewHolder(view)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType:
