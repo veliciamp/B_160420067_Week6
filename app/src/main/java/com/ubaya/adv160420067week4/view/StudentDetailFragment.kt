@@ -18,7 +18,6 @@ import kotlinx.android.synthetic.main.fragment_student_detail.*
 import kotlinx.android.synthetic.main.student_list_item.*
 import kotlinx.android.synthetic.main.student_list_item.view.*
 
-
 class StudentDetailFragment : Fragment() {
 
     private lateinit var viewModel: DetailViewModel
@@ -49,8 +48,6 @@ class StudentDetailFragment : Fragment() {
             val txtDob= view?.findViewById<TextInputEditText>(R.id.txtDob)
             val txtPhone=view?.findViewById<TextInputEditText>(R.id.txtPhone)
             val image=view?.findViewById<ImageView>(R.id.imageView2)
-
-
 
             txtID?.setText(viewModel.studentsLD.value?.id)
             txtName?.setText(viewModel.studentsLD.value?.name)
